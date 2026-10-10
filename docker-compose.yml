@@ -1,0 +1,29 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: tp4-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: MdpRoot
+    ports: ["3306:3306"]
+
+  postgres:
+    image: postgres:16
+    container_name: tp4-pg
+    environment:
+      POSTGRES_PASSWORD: MdpPg
+    ports: ["5432:5432"]
+
+  oracle:
+    image: gvenzl/oracle-xe:21-slim
+    container_name: tp4-oracle
+    environment:
+      ORACLE_PASSWORD: MdpSystem
+    ports: ["1521:1521"]
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: tp4-mssql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "MdpSa_2026!"
+    ports: ["1433:1433"]
