@@ -1,7 +1,7 @@
 # Audit d'intégrité inter-SGBD — TP4 Fédération de données
 
   Étudiants :  
-   Amioune NDIAYE
+   Alioune NDIAYE
    Korotimi Inna DIALLO
 
 Aucune clé étrangère ne traverse les 4 SGBD (MySQL, PostgreSQL, Oracle, SQL Server). L'intégrité référentielle a donc été vérifiée par anti-jointures (`LEFT ANTI JOIN`) dans Spark SQL.
